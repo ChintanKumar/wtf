@@ -24,6 +24,6 @@ function getGithubUser() {
       }
   };
   
-  xhttp.open("GET", "http://api.github.com/users/"+ip.value, true);
+  xhttp.open("GET", "https://api.github.com/users/"+ip.value, true);
   xhttp.send();
 }
