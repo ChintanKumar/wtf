@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hello User!</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+   
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">
+          github user details
+        </h1>
+        <p class="subtitle">Let's start <strong>looking</strong>!</p>
+        <div class="field">
+          <label class="label">Username</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input" id="ip" type="text" placeholder="@username" />
+            <span class="icon is-small is-left">
+              <i class="fas fa-user"></i>
+            </span>
+          </div>
+        </div>
+        <div class="control">
+          <button class="button is-link" onclick="getGithubUser()">Submit</button>
+        </div>
+
+        <div class="card" id="userdetails">
+          
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img id="pic"
+                  />
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title is-4" id="name" ></p>
+                <p class="subtitle is-6" id="login"></p>
+              </div>
+            </div>
+
+            <div class="content" id="content">
+              <p class="subtitle is-6" id= "bio"> </p>
+              <p id = "date"> </p>
+
+
+              <p class="subtitle is-6" id= "followers"> </p>
+              <p class="subtitle is-6" id= "following"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script type="text/javascript" src="./script/index.js"></script>
+</html>
